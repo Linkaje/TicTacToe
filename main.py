@@ -89,7 +89,7 @@ class TicTacToe:
             print()
             # fixing the spot
             self.fix_spot(row - 1, col - 1, player)
-            # checking whether current player is won or not
+            # checking whether current player has won or not
             if self.is_player_win(player):
                 print(f"Player {player} wins the game!")
                 break
@@ -99,7 +99,7 @@ class TicTacToe:
                 break
             # swapping the turn
             player = self.swap_player_turn(player)
-        # showing the final view of board
+        # showing the final view of the board
         print()
         self.show_board()
 
